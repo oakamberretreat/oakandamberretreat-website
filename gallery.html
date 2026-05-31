@@ -1,135 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gallery | Oak & Amber Retreat</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Oak & Amber Retreat Manali</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<header style="
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:white;
-">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms & Floors</a></li>
+                <li><a href="gallery.html" style="color: var(--color-accent);">Gallery</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="explore-manali.html">Explore Manali</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#booking" class="book-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div style="font-size:24px;font-weight:bold;">
-Oak & Amber Retreat
-</div>
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1>A Glimpse of Serenity</h1>
+            <p>Explore the architecture, warm interiors, and breathtaking valley views of Oak & Amber Retreat.</p>
+        </div>
+    </header>
 
-<nav>
+    <!-- GALLERY SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            
+            <div class="text-center" style="margin-bottom: 40px;">
+                <p><strong>Note for Developer:</strong> To add your real photos, upload them to your GitHub repository. Then, edit this HTML file and replace the empty <code>&lt;div class="gallery-item"&gt;</code> spans with <code>&lt;img src="your-photo-name.jpg"&gt;</code>.</p>
+            </div>
 
-<a href="index.html" style="margin-left:20px;text-decoration:none;color:#222;">Home</a>
+            <div class="gallery-grid">
+                
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <!-- <img src="exterior-view.jpg" alt="Exterior View"> -->
+                    <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #718096;">Upload Photo 1</div>
+                    <div class="gallery-caption">Exterior View</div>
+                </div>
 
-<a href="rooms.html" style="margin-left:20px;text-decoration:none;color:#222;">Rooms & Villas</a>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <!-- <img src="attic-bedroom.jpg" alt="Attic Bedroom"> -->
+                    <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #718096;">Upload Photo 2</div>
+                    <div class="gallery-caption">Wooden Attic</div>
+                </div>
 
-<a href="gallery.html" style="margin-left:20px;text-decoration:none;color:#222;">Gallery</a>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <!-- <img src="modern-living.jpg" alt="Modern Living Area"> -->
+                    <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #718096;">Upload Photo 3</div>
+                    <div class="gallery-caption">Modern Living Area</div>
+                </div>
 
-<a href="#" style="margin-left:20px;text-decoration:none;color:#222;">Contact</a>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" style="background-image: url('hero photo.JPG'); background-size: cover; background-position: center;">
+                    <!-- Using hero photo as example -->
+                    <div class="gallery-caption">Mountain Views</div>
+                </div>
 
-</nav>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <!-- <img src="dining.jpg" alt="Dining Area"> -->
+                    <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #718096;">Upload Photo 5</div>
+                    <div class="gallery-caption">Dining Area</div>
+                </div>
 
-</header>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <!-- <img src="balcony.jpg" alt="Balcony View"> -->
+                    <div style="height: 100%; display: flex; align-items: center; justify-content: center; color: #718096;">Upload Photo 6</div>
+                    <div class="gallery-caption">Balcony View</div>
+                </div>
 
-<section style="
-padding:70px 30px;
-text-align:center;
-background:#faf8f5;
-">
+            </div>
 
-<h1>Gallery</h1>
+            <div class="text-center" style="margin-top: 60px;">
+                <a href="https://instagram.com/oakamberretreat" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> Follow us on Instagram for more</a>
+            </div>
+        </div>
+    </section>
 
-<p>
-A closer look at Oak & Amber Retreat.
-</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Oak & Amber Retreat</h4>
+                    <p>Escape the Crowds. Experience Manali Differently.</p>
+                    <p>Sajla, Manali, Himachal Pradesh</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms & Rates</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 78888 92636</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 78888 92636</li>
+                        <li><i class="fas fa-envelope"></i> oakamberretreat@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i> @oakamberretreat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-</section>
-
-<section style="
-padding:50px 30px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-">
-
-<div class="hero" style="
-min-height:280px;
-border-radius:12px;
-background:
-linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
-url('hero photo.JPG');
-background-size:cover;
-background-position:center;
-">
-</div>
-
-<div style="
-background:white;
-padding:40px;
-border-radius:12px;
-text-align:center;
-">
-
-<h3>Mountain Views</h3>
-
-<p>
-Wake up to peaceful Sajla valley views.
-</p>
-
-</div>
-
-<div style="
-background:white;
-padding:40px;
-border-radius:12px;
-text-align:center;
-">
-
-<h3>Wooden Attic Experience</h3>
-
-<p>
-Warm interiors perfect for cozy stays.
-</p>
-
-</div>
-
-<div style="
-background:white;
-padding:40px;
-border-radius:12px;
-text-align:center;
-">
-
-<h3>Family & Group Stays</h3>
-
-<p>
-Flexible spaces for everyone together.
-</p>
-
-</div>
-
-</section>
-
-<footer style="
-text-align:center;
-background:#111;
-color:white;
-padding:30px;
-">
-
-© Oak & Amber Retreat • Sajla, Manali
-
-</footer>
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
-
 </html>
-```
