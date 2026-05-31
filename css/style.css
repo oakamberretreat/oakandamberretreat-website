@@ -7,15 +7,24 @@ body{
 
 .hero{
   min-height:100vh;
+
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
+
   text-align:center;
   padding:40px;
-  background:linear-gradient(
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.45)
-  );
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("hero photo");
+
+  background-size:cover;
+  background-position:center;
+
   color:white;
 }
 
@@ -41,5 +50,5 @@ body{
   border-radius:8px;
   text-decoration:none;
   font-weight:bold;
-  margin:10px;
 }
+```
