@@ -17,30 +17,52 @@
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
+padding:18px 40px;
 background:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 12px rgba(0,0,0,.06);
 ">
 
-<div style="font-size:24px;font-weight:bold;">
+<div style="font-size:24px;font-weight:700;">
 Oak & Amber Retreat
 </div>
 
-<nav>
+<nav style="
+display:flex;
+gap:18px;
+align-items:center;
+flex-wrap:wrap;
+">
 
-<a href="index.html" style="margin-left:20px;text-decoration:none;color:#222;">Home</a>
+<a href="index.html" style="text-decoration:none;color:#222;">Home</a>
+<a href="rooms.html" style="text-decoration:none;color:#222;">Rooms</a>
+<a href="gallery.html" style="text-decoration:none;color:#222;">Gallery</a>
+<a href="experiences.html" style="text-decoration:none;color:#222;">Experiences</a>
+<a href="explore-manali.html" style="text-decoration:none;color:#222;">Explore Manali</a>
+<a href="contact.html" style="text-decoration:none;color:#222;">Contact</a>
 
-<a href="rooms.html" style="margin-left:20px;text-decoration:none;color:#222;">Rooms & Villas</a>
-
-<a href="gallery.html" style="margin-left:20px;text-decoration:none;color:#222;">Gallery</a>
-
-<a href="contact.html" style="margin-left:20px;text-decoration:none;color:#222;">Contact</a>
+<a
+href="index.html#booking"
+style="
+background:#8a613d;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+"
+>
+Book Now
+</a>
 
 </nav>
 
 </header>
 
 <section style="
-padding:70px 30px;
+padding:80px 30px;
 text-align:center;
 background:#faf8f5;
 ">
@@ -48,7 +70,7 @@ background:#faf8f5;
 <h1>Experiences at Oak & Amber Retreat</h1>
 
 <p>
-More than a stay — a peaceful mountain escape.
+Slow mountain living, fresh air and peaceful moments in Sajla.
 </p>
 
 </section>
@@ -56,46 +78,75 @@ More than a stay — a peaceful mountain escape.
 <section style="
 padding:50px 30px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
+background:white;
 ">
 
-<div style="background:white;padding:30px;border-radius:12px;">
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h3>Family Vacations</h3>
-<p>
-Spacious and peaceful stays perfect for families.
-</p>
+<p>Spacious and peaceful stays for families to relax together.</p>
 </div>
 
-<div style="background:white;padding:30px;border-radius:12px;">
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h3>Workations</h3>
-<p>
-Fresh mountain air and calm surroundings to work peacefully.
-</p>
+<p>Mountain calm with inspiring views and flexible long stays.</p>
 </div>
 
-<div style="background:white;padding:30px;border-radius:12px;">
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h3>Group Stays</h3>
-<p>
-Ideal for reunions and shared mountain escapes.
-</p>
+<p>Perfect for reunions, celebrations and shared mountain escapes.</p>
 </div>
 
-<div style="background:white;padding:30px;border-radius:12px;">
-<h3>Long Stays</h3>
-<p>
-Comfortable extended stays with flexible options.
-</p>
-</div>
-
-<div style="background:white;padding:30px;border-radius:12px;">
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h3>Bonfire Evenings</h3>
-<p>
-Relax with mountain evenings and memorable conversations.
-</p>
+<p>Enjoy peaceful evenings and memorable conversations outdoors.</p>
 </div>
 
 </section>
+
+<section style="
+padding:70px 30px;
+background:#faf8f5;
+text-align:center;
+">
+
+<h2>Plan Your Stay</h2>
+
+<p>
+Tell us your dates and we’ll help you choose the best stay option.
+</p>
+
+<a
+href="https://wa.me/917888892636"
+class="btn"
+>
+
+Chat on WhatsApp
+
+</a>
+
+</section>
+
+<a
+href="https://wa.me/917888892636"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:16px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+z-index:999;
+"
+>
+
+💬
+
+</a>
 
 <footer style="
 text-align:center;
