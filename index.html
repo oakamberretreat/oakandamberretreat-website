@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oak & Amber Retreat | Premium Mountain Villa in Sajla, Manali</title>
-    
     <link rel="stylesheet" href="css/style.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <a href="index.html" class="nav-brand">
+                <img src="logo_compressed.png" alt="Oak & Amber Retreat Logo">
+            </a>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" style="color: var(--color-accent);">Home</a></li>
                 <li><a href="rooms.html">Rooms & Floors</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="experiences.html">Experiences</a></li>
@@ -39,10 +39,10 @@
         <div class="container">
             <span class="section-subtitle">Welcome</span>
             <h2 class="section-title">A Home Above The Clouds</h2>
-            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">
+            <p style="max-width: 700px; margin: 0 auto 30px;">
                 Peaceful mountain stays with scenic valley views, warm wooden interiors, and private villa experiences away from the bustling Mall Road. Perfect for families, workations, and long stays.
             </p>
-            <div style="font-size: 1.2rem; color: var(--color-accent); font-weight: bold; margin-bottom: 10px;">
+            <div style="font-size: 1.2rem; color: var(--color-accent); margin-bottom: 10px;">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <p><strong>5.0 Rating / 21 Google Reviews</strong></p>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="stay-card">
                     <i class="fas fa-layer-group" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 20px;"></i>
-                    <h3>Entire Floor (3 BHK)</h3>
+                    <h3>Entire Floor (3/4 BHK)</h3>
                     <p>Choose between our Modern Ground/First Floor or our Premium Wooden Attic Floor.</p>
                 </div>
                 <div class="stay-card">
@@ -72,10 +72,7 @@
                     <p>Total privacy for large groups and families. 10 Bedrooms spread across 3 floors.</p>
                 </div>
             </div>
-            
-            <div style="margin-top: 40px;">
-                <a href="rooms.html" class="btn btn-outline">Explore All Rooms</a>
-            </div>
+            <div style="margin-top: 40px;"><a href="rooms.html" class="btn btn-outline">Explore All Rooms</a></div>
         </div>
     </section>
 
@@ -84,51 +81,29 @@
             <div class="text-center">
                 <span class="section-subtitle">Reservations</span>
                 <h2 class="section-title">Book Your Escape</h2>
-                <p style="margin-bottom: 40px;">Starting from ₹2,499. Prices vary by season, occupancy, and stay type. Fill the form below and we will contact you immediately.</p>
+                <p style="margin-bottom: 40px;">Starting from ₹2,499. Prices vary by season, occupancy, and stay type.</p>
             </div>
-            
             <div class="booking-form-wrapper">
                 <form action="https://formsubmit.co/oakamberretreat@gmail.com" method="POST">
-                    
                     <input type="hidden" name="_subject" value="New Booking Inquiry - Oak & Amber Retreat">
-                    <input type="hidden" name="_next" value="https://oakandamberretreat-website.pages.dev/">
+                    <input type="hidden" name="_next" value="https://oakandamberretreat.com">
                     <input type="hidden" name="_captcha" value="false">
-
                     <div class="form-grid">
+                        <div class="form-group"><label>Full Name</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="phone" required></div>
+                        <div class="form-group"><label>Check-in Date</label><input type="date" name="checkin" required></div>
+                        <div class="form-group"><label>Check-out Date</label><input type="date" name="checkout" required></div>
+                        <div class="form-group"><label>Guests</label><input type="number" name="guests" min="1" required></div>
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone / WhatsApp</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="checkin">Check-in Date</label>
-                            <input type="date" id="checkin" name="checkin" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="checkout">Check-out Date</label>
-                            <input type="date" id="checkout" name="checkout" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="guests">Number of Guests</label>
-                            <input type="number" id="guests" name="guests" min="1" required placeholder="2">
-                        </div>
-                        <div class="form-group">
-                            <label for="staytype">Stay Type</label>
-                            <select id="staytype" name="staytype" required>
+                            <label>Stay Type</label>
+                            <select name="staytype" required>
                                 <option value="" disabled selected>Select an option</option>
                                 <option value="Individual Room">Individual Room</option>
-                                <option value="Entire Ground Floor">Entire Ground Floor</option>
-                                <option value="Entire First Floor">Entire First Floor</option>
-                                <option value="Entire Wooden Attic">Entire Wooden Attic</option>
-                                <option value="Entire Villa">Entire Villa</option>
+                                <option value="Ground Floor (3BHK)">Entire Ground Floor (3BHK)</option>
+                                <option value="First Floor (3BHK)">Entire First Floor (3BHK)</option>
+                                <option value="Second Floor Attic (4BHK)">Entire Wooden Attic (4BHK)</option>
+                                <option value="Entire Villa">Entire Villa (10 Bedrooms)</option>
                             </select>
-                        </div>
-                        <div class="form-group full-width">
-                            <label for="message">Special Requests / Message (Optional)</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Any special requirements? (e.g., bringing a pet, meals required)"></textarea>
                         </div>
                         <div class="form-group full-width">
                             <button type="submit" class="btn btn-primary">Send Inquiry</button>
@@ -146,7 +121,6 @@
                 <a href="https://www.makemytrip.com/hotels/oak_amber_retreat-details-manali.html" target="_blank">MakeMyTrip</a>
                 <a href="https://www.goibibo.com/hotels/oak-amber-retreat-hotel-in-manali-202604240107579416/" target="_blank">Goibibo</a>
                 <a href="https://www.agoda.com/en-in/oak-amber-retreat/hotel/manali-in.html" target="_blank">Agoda</a>
-                <a href="#" style="cursor: default; opacity: 0.7;">Airbnb (Coming Soon)</a>
             </div>
         </div>
     </section>
@@ -155,16 +129,14 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Oak & Amber Retreat</h4>
+                    <img src="logo_compressed.png" alt="Logo" style="height: 40px; margin-bottom: 15px; filter: brightness(0) invert(1);">
                     <p>Escape the Crowds. Experience Manali Differently.</p>
-                    <p>Sajla, Manali, Himachal Pradesh</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="rooms.html">Rooms & Rates</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="experiences.html">Experiences</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -172,21 +144,15 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><i class="fas fa-phone"></i> +91 78888 92636</li>
-                        <li><i class="fab fa-whatsapp"></i> +91 78888 92636</li>
                         <li><i class="fas fa-envelope"></i> oakamberretreat@gmail.com</li>
-                        <li><i class="fab fa-instagram"></i> @oakamberretreat</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p></div>
         </div>
     </footer>
 
-    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 </body>
 </html>
