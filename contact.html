@@ -1,147 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact | Oak & Amber Retreat</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Oak & Amber Retreat Manali</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<header style="
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:white;
-">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms & Floors</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="explore-manali.html">Explore Manali</a></li>
+                <li><a href="contact.html" style="color: var(--color-accent);">Contact</a></li>
+                <li><a href="index.html#booking" class="book-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div style="font-size:24px;font-weight:bold;">
-Oak & Amber Retreat
-</div>
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We would love to host you. Reach out to us for bookings, group rates, or any questions.</p>
+        </div>
+    </header>
 
-<nav>
+    <!-- CONTACT DETAILS & FORM -->
+    <section class="section-padding booking-section">
+        <div class="container">
+            
+            <div class="room-row" style="align-items: flex-start;">
+                
+                <!-- LEFT SIDE: Info -->
+                <div>
+                    <h2 class="section-title" style="font-size: 2rem;">Contact Details</h2>
+                    <p style="margin-bottom: 30px;">Call us or drop a WhatsApp message. We respond quickly!</p>
+                    
+                    <ul style="font-size: 1.1rem; line-height: 2.5;">
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--color-accent); width: 30px;"></i> Sajla, Manali, Himachal Pradesh</li>
+                        <li><i class="fas fa-phone" style="color: var(--color-accent); width: 30px;"></i> +91 78888 92636</li>
+                        <li><i class="fab fa-whatsapp" style="color: var(--color-accent); width: 30px;"></i> +91 78888 92636</li>
+                        <li><i class="fas fa-envelope" style="color: var(--color-accent); width: 30px;"></i> oakamberretreat@gmail.com</li>
+                    </ul>
 
-<a href="index.html" style="margin-left:20px;text-decoration:none;color:#222;">Home</a>
+                    <div style="background: var(--color-bg-white); padding: 20px; border-radius: 8px; margin-top: 30px; border-left: 4px solid var(--color-accent);">
+                        <h4 style="margin-bottom: 10px;">House Rules</h4>
+                        <p style="margin: 0;"><strong>Check-in:</strong> 12:00 PM</p>
+                        <p style="margin: 0;"><strong>Check-out:</strong> 10:00 AM</p>
+                        <p style="margin: 0;"><strong>Pet Friendly:</strong> Yes!</p>
+                        <p style="margin: 0;"><strong>Parking:</strong> Available on-site</p>
+                    </div>
 
-<a href="rooms.html" style="margin-left:20px;text-decoration:none;color:#222;">Rooms & Villas</a>
+                    <a href="https://maps.app.goo.gl/ryfCCDZ74VhPiB6o8" target="_blank" class="btn btn-outline" style="margin-top: 30px;">
+                        <i class="fas fa-map"></i> Open in Google Maps
+                    </a>
+                </div>
 
-<a href="gallery.html" style="margin-left:20px;text-decoration:none;color:#222;">Gallery</a>
+                <!-- RIGHT SIDE: Form -->
+                <div class="booking-form-wrapper" style="margin: 0; width: 100%;">
+                    <h3 style="margin-bottom: 20px;">Send an Inquiry</h3>
+                    <form action="https://formsubmit.co/oakamberretreat@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Inquiry">
+                        <input type="hidden" name="_next" value="https://oakandamberretreat-website.pages.dev/">
+                        <input type="hidden" name="_captcha" value="false">
 
-<a href="contact.html" style="margin-left:20px;text-decoration:none;color:#222;">Contact</a>
+                        <div class="form-grid" style="grid-template-columns: 1fr;">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone / WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message / Dates</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
 
-</nav>
+            </div>
+        </div>
+    </section>
 
-</header>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Oak & Amber Retreat</h4>
+                    <p>Escape the Crowds. Experience Manali Differently.</p>
+                    <p>Sajla, Manali, Himachal Pradesh</p>
+                </div>
+                <!-- Other footer stuff is here -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<section style="
-padding:70px 30px;
-text-align:center;
-background:#faf8f5;
-">
-
-<h1>Contact Oak & Amber Retreat</h1>
-
-<p>
-We’d love to host you in Sajla, Manali.
-</p>
-
-</section>
-
-<section style="
-padding:50px 30px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-">
-
-<div style="
-background:white;
-padding:30px;
-border-radius:12px;
-">
-
-<h3>WhatsApp</h3>
-
-<p>7888892636</p>
-
-<a
-href="https://wa.me/917888892636"
-class="btn"
->
-
-Chat on WhatsApp
-
-</a>
-
-</div>
-
-<div style="
-background:white;
-padding:30px;
-border-radius:12px;
-">
-
-<h3>Phone</h3>
-
-<p>7888892636</p>
-
-</div>
-
-<div style="
-background:white;
-padding:30px;
-border-radius:12px;
-">
-
-<h3>Email</h3>
-
-<p>oakamberretreat@gmail.com</p>
-
-</div>
-
-<div style="
-background:white;
-padding:30px;
-border-radius:12px;
-">
-
-<h3>Location</h3>
-
-<p>
-Sajla, Manali, Himachal Pradesh
-</p>
-
-<a
-href="https://maps.app.goo.gl/ryfCCDZ74VhPiB6o8"
-class="btn"
->
-
-Open Google Maps
-
-</a>
-
-</div>
-
-</section>
-
-<footer style="
-text-align:center;
-background:#111;
-color:white;
-padding:30px;
-">
-
-© Oak & Amber Retreat • Sajla, Manali
-
-</footer>
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
-
 </html>
-```
