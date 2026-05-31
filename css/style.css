@@ -73,10 +73,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .navbar .container { display: flex; justify-content: space-between; align-items: center; }
 
-/* LOGO STYLING */
+/* LOGO STYLING - FIXED FOR PROPER SCALING */
 .nav-brand img {
-    height: 50px; /* Adjust this if logo is too big or small */
+    height: 55px; 
     width: auto;
+    max-width: 250px;
+    object-fit: contain; /* This prevents the weird stretching/squishing */
 }
 
 .nav-links { display: flex; align-items: center; gap: 30px; }
@@ -105,7 +107,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- PAGE HEADERS (INTERNAL PAGES) --- */
 .page-header {
-    position: relative; background: url('../4.jpg') center/cover no-repeat; /* Uses exterior shot */
+    position: relative; background: url('../4.jpg') center/cover no-repeat; 
     padding: 180px 0 100px; text-align: center;
 }
 .page-header .container { position: relative; z-index: 1; }
@@ -116,7 +118,7 @@ img { max-width: 100%; height: auto; display: block; }
 .ota-banner { background-color: var(--color-primary); color: white; padding: 40px 0; }
 .ota-banner h3 { color: white; font-size: 1.3rem; }
 .ota-logos { display: flex; justify-content: center; gap: 30px; margin-top: 15px; flex-wrap: wrap; }
-.ota-logos a { color: var(--color-accent); font-size: 1rem; border-bottom: 1px solid transparent; }
+.ota-logos a { color: var(--color-accent); font-size: 1rem; border-bottom: 1px solid transparent; display: flex; align-items: center; gap: 8px; }
 .ota-logos a:hover { border-bottom: 1px solid var(--color-accent); }
 
 /* --- CARDS & GRIDS --- */
