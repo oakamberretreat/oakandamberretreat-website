@@ -12,7 +12,9 @@
     <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <a href="index.html" class="nav-brand">
+                <img src="logo_compressed.png" alt="Oak & Amber Retreat Logo">
+            </a>
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -27,10 +29,10 @@
     </nav>
 
     <!-- PAGE HEADER -->
-    <header class="page-header">
+    <header class="page-header" style="background-image: url('19.jpg');">
         <div class="container">
             <h1>Get In Touch</h1>
-            <p>We would love to host you. Reach out to us for bookings, group rates, or any questions.</p>
+            <p>We would love to host you. Reach out to us for bookings, group rates, or any questions you might have.</p>
         </div>
     </header>
 
@@ -52,7 +54,7 @@
                         <li><i class="fas fa-envelope" style="color: var(--color-accent); width: 30px;"></i> oakamberretreat@gmail.com</li>
                     </ul>
 
-                    <div style="background: var(--color-bg-white); padding: 20px; border-radius: 8px; margin-top: 30px; border-left: 4px solid var(--color-accent);">
+                    <div style="background: var(--color-bg-white); padding: 20px; border-radius: 8px; margin-top: 30px; border-left: 4px solid var(--color-accent); box-shadow: var(--shadow-soft);">
                         <h4 style="margin-bottom: 10px;">House Rules</h4>
                         <p style="margin: 0;"><strong>Check-in:</strong> 12:00 PM</p>
                         <p style="margin: 0;"><strong>Check-out:</strong> 10:00 AM</p>
@@ -70,7 +72,8 @@
                     <h3 style="margin-bottom: 20px;">Send an Inquiry</h3>
                     <form action="https://formsubmit.co/oakamberretreat@gmail.com" method="POST">
                         <input type="hidden" name="_subject" value="New Contact Form Inquiry">
-                        <input type="hidden" name="_next" value="https://oakandamberretreat-website.pages.dev/">
+                        <!-- Redirects to your live domain once form is submitted -->
+                        <input type="hidden" name="_next" value="https://oakandamberretreat.com">
                         <input type="hidden" name="_captcha" value="false">
 
                         <div class="form-grid" style="grid-template-columns: 1fr;">
@@ -83,7 +86,7 @@
                                 <input type="tel" id="phone" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Your Message / Dates</label>
+                                <label for="message">Your Message / Requested Dates</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
@@ -100,15 +103,26 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Oak & Amber Retreat</h4>
+                    <img src="logo_compressed.png" alt="Logo" style="height: 40px; margin-bottom: 15px; filter: brightness(0) invert(1);">
                     <p>Escape the Crowds. Experience Manali Differently.</p>
-                    <p>Sajla, Manali, Himachal Pradesh</p>
                 </div>
-                <!-- Other footer stuff is here -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms & Rates</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 78888 92636</li>
+                        <li><i class="fas fa-envelope"></i> oakamberretreat@gmail.com</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p></div>
         </div>
     </footer>
 
