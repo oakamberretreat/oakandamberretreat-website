@@ -1,262 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Oak & Amber Retreat | Private Mountain Villa in Sajla, Manali</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak & Amber Retreat | Premium Mountain Villa in Sajla, Manali</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<header style="
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 40px;
-background:rgba(255,255,255,.96);
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 12px rgba(0,0,0,.06);
-">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms & Floors</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="explore-manali.html">Explore Manali</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#booking" class="book-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div style="
-font-size:24px;
-font-weight:700;
-color:#222;
-">
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-tagline">A Private Mountain Villa in Sajla, Manali</span>
+            <h1 class="hero-title">Escape the Crowds.<br>Experience Manali Differently.</h1>
+            <a href="#booking" class="btn btn-primary">Check Availability</a>
+        </div>
+    </header>
 
-Oak & Amber Retreat
+    <section class="section-padding text-center">
+        <div class="container">
+            <span class="section-subtitle">Welcome</span>
+            <h2 class="section-title">A Home Above The Clouds</h2>
+            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">
+                Peaceful mountain stays with scenic valley views, warm wooden interiors, and private villa experiences away from the bustling Mall Road. Perfect for families, workations, and long stays.
+            </p>
+            <div style="font-size: 1.2rem; color: var(--color-accent); font-weight: bold; margin-bottom: 10px;">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p><strong>5.0 Rating / 21 Google Reviews</strong></p>
+        </div>
+    </section>
 
-</div>
+    <section class="section-padding" style="background-color: var(--color-bg-white);">
+        <div class="container text-center">
+            <span class="section-subtitle">Accommodation</span>
+            <h2 class="section-title">Choose Your Stay</h2>
+            <p>Whether you need a cozy room or the entire villa, we have the perfect space.</p>
+            
+            <div class="stay-grid">
+                <div class="stay-card">
+                    <i class="fas fa-door-open" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 20px;"></i>
+                    <h3>Individual Room</h3>
+                    <p>Modern interiors. Perfect for couples or solo travelers on a workation. Max 3 guests.</p>
+                </div>
+                <div class="stay-card">
+                    <i class="fas fa-layer-group" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 20px;"></i>
+                    <h3>Entire Floor (3 BHK)</h3>
+                    <p>Choose between our Modern Ground/First Floor or our Premium Wooden Attic Floor.</p>
+                </div>
+                <div class="stay-card">
+                    <i class="fas fa-house" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 20px;"></i>
+                    <h3>Entire Villa</h3>
+                    <p>Total privacy for large groups and families. 10 Bedrooms spread across 3 floors.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <a href="rooms.html" class="btn btn-outline">Explore All Rooms</a>
+            </div>
+        </div>
+    </section>
 
-<nav style="
-display:flex;
-align-items:center;
-gap:18px;
-flex-wrap:wrap;
-">
+    <section id="booking" class="section-padding booking-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Reservations</span>
+                <h2 class="section-title">Book Your Escape</h2>
+                <p style="margin-bottom: 40px;">Starting from ₹2,499. Prices vary by season, occupancy, and stay type. Fill the form below and we will contact you immediately.</p>
+            </div>
+            
+            <div class="booking-form-wrapper">
+                <form action="https://formsubmit.co/oakamberretreat@gmail.com" method="POST">
+                    
+                    <input type="hidden" name="_subject" value="New Booking Inquiry - Oak & Amber Retreat">
+                    <input type="hidden" name="_next" value="https://oakandamberretreat-website.pages.dev/">
+                    <input type="hidden" name="_captcha" value="false">
 
-<a href="index.html" style="text-decoration:none;color:#222;font-weight:600;">Home</a>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkin">Check-in Date</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out Date</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" required placeholder="2">
+                        </div>
+                        <div class="form-group">
+                            <label for="staytype">Stay Type</label>
+                            <select id="staytype" name="staytype" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Individual Room">Individual Room</option>
+                                <option value="Entire Ground Floor">Entire Ground Floor</option>
+                                <option value="Entire First Floor">Entire First Floor</option>
+                                <option value="Entire Wooden Attic">Entire Wooden Attic</option>
+                                <option value="Entire Villa">Entire Villa</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Special Requests / Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any special requirements? (e.g., bringing a pet, meals required)"></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<a href="rooms.html" style="text-decoration:none;color:#222;font-weight:600;">Rooms</a>
+    <section class="ota-banner text-center">
+        <div class="container">
+            <h3>Also Available On</h3>
+            <div class="ota-logos">
+                <a href="https://www.makemytrip.com/hotels/oak_amber_retreat-details-manali.html" target="_blank">MakeMyTrip</a>
+                <a href="https://www.goibibo.com/hotels/oak-amber-retreat-hotel-in-manali-202604240107579416/" target="_blank">Goibibo</a>
+                <a href="https://www.agoda.com/en-in/oak-amber-retreat/hotel/manali-in.html" target="_blank">Agoda</a>
+                <a href="#" style="cursor: default; opacity: 0.7;">Airbnb (Coming Soon)</a>
+            </div>
+        </div>
+    </section>
 
-<a href="gallery.html" style="text-decoration:none;color:#222;font-weight:600;">Gallery</a>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Oak & Amber Retreat</h4>
+                    <p>Escape the Crowds. Experience Manali Differently.</p>
+                    <p>Sajla, Manali, Himachal Pradesh</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms & Rates</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 78888 92636</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 78888 92636</li>
+                        <li><i class="fas fa-envelope"></i> oakamberretreat@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i> @oakamberretreat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<a href="experiences.html" style="text-decoration:none;color:#222;font-weight:600;">Experiences</a>
-
-<a href="explore-manali.html" style="text-decoration:none;color:#222;font-weight:600;">Explore Manali</a>
-
-<a href="contact.html" style="text-decoration:none;color:#222;font-weight:600;">Contact</a>
-
-<a
-href="#booking"
-style="
-background:#8a613d;
-color:white;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:700;
-"
->
-
-Book Now
-
-</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-box">
-
-<p>A Private Mountain Villa in Sajla, Manali</p>
-
-<h1>
-Escape the Crowds.<br>
-Experience Manali Differently.
-</h1>
-
-<p>
-Peaceful mountain stays with scenic valley views,
-warm wooden interiors and private villa experiences away from Mall Road.
-</p>
-
-<a
-href="https://wa.me/917888892636"
-class="btn"
->
-
-Get a Quote on WhatsApp
-
-</a>
-
-</div>
-
-</section>
-
-<section style="
-padding:70px 30px;
-background:white;
-text-align:center;
-">
-
-<h2>Guest Reviews</h2>
-
-<p style="font-size:20px;">
-⭐ 5.0 Rating • 21 Google Reviews
-</p>
-
-<p>
-Guests love our peaceful location,
-beautiful views and warm hospitality.
-</p>
-
-</section>
-
-<section style="
-padding:70px 30px;
-background:#faf8f5;
-text-align:center;
-">
-
-<h2>Choose Your Stay</h2>
-
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
-">
-
-<div style="background:white;padding:25px;border-radius:12px;">
-<h3>Private Room</h3>
-<p>Comfortable stays for couples and families.</p>
-</div>
-
-<div style="background:white;padding:25px;border-radius:12px;">
-<h3>Entire Floor</h3>
-<p>Ground, First or Wooden Attic floor.</p>
-</div>
-
-<div style="background:white;padding:25px;border-radius:12px;">
-<h3>Entire Villa</h3>
-<p>Perfect for large groups and celebrations.</p>
-</div>
-
-</div>
-
-</section>
-
-<section
-id="booking"
-style="
-padding:70px 30px;
-background:white;
-text-align:center;
-"
->
-
-<h2>Booking Inquiry</h2>
-
-<p>
-Starting from ₹2,499 • Prices vary by season and occupancy
-</p>
-
-<form
-action="https://formsubmit.co/oakamberretreat@gmail.com"
-method="POST"
-style="
-max-width:700px;
-margin:auto;
-display:grid;
-gap:15px;
-margin-top:25px;
-"
->
-
-<input
-type="text"
-name="Name"
-placeholder="Full Name"
-required
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
->
-
-<input
-type="tel"
-name="Phone"
-placeholder="Phone / WhatsApp"
-required
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
->
-
-<input
-type="date"
-name="Check In"
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
->
-
-<input
-type="date"
-name="Check Out"
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
->
-
-<select
-name="Stay Type"
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
->
-
-<option>Private Room</option>
-<option>Entire Ground Floor</option>
-<option>Entire First Floor</option>
-<option>Wooden Attic Floor</option>
-<option>Entire Villa</option>
-
-</select>
-
-<textarea
-name="Message"
-rows="5"
-placeholder="Tell us about your trip"
-style="padding:14px;border:1px solid #ddd;border-radius:8px;"
-></textarea>
-
-<button
-type="submit"
-class="btn"
-style="border:none;cursor:pointer;"
->
-
-Request Availability
-
-</button>
-
-</form>
-
-</section>
-
-<footer style="
-text-align:center;
-background:#111;
-color:white;
-padding:30px;
-">
-
-© Oak & Amber Retreat • Sajla, Manali
-
-</footer>
+    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
-
 </html>
-```
