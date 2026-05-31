@@ -17,25 +17,58 @@
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
-background:white;
+padding:18px 40px;
+background:rgba(255,255,255,.96);
 position:sticky;
 top:0;
 z-index:1000;
+box-shadow:0 2px 12px rgba(0,0,0,.06);
 ">
 
-<div style="font-size:24px;font-weight:bold;">
+<div style="
+font-size:24px;
+font-weight:700;
+color:#222;
+">
+
 Oak & Amber Retreat
+
 </div>
 
-<nav>
+<nav style="
+display:flex;
+align-items:center;
+gap:18px;
+flex-wrap:wrap;
+">
 
-<a href="index.html" style="margin-left:18px;text-decoration:none;color:#222;">Home</a>
-<a href="rooms.html" style="margin-left:18px;text-decoration:none;color:#222;">Rooms</a>
-<a href="gallery.html" style="margin-left:18px;text-decoration:none;color:#222;">Gallery</a>
-<a href="experiences.html" style="margin-left:18px;text-decoration:none;color:#222;">Experiences</a>
-<a href="explore-manali.html" style="margin-left:18px;text-decoration:none;color:#222;">Explore Manali</a>
-<a href="contact.html" style="margin-left:18px;text-decoration:none;color:#222;">Contact</a>
+<a href="index.html" style="text-decoration:none;color:#222;font-weight:600;">Home</a>
+
+<a href="rooms.html" style="text-decoration:none;color:#222;font-weight:600;">Rooms</a>
+
+<a href="gallery.html" style="text-decoration:none;color:#222;font-weight:600;">Gallery</a>
+
+<a href="experiences.html" style="text-decoration:none;color:#222;font-weight:600;">Experiences</a>
+
+<a href="explore-manali.html" style="text-decoration:none;color:#222;font-weight:600;">Explore Manali</a>
+
+<a href="contact.html" style="text-decoration:none;color:#222;font-weight:600;">Contact</a>
+
+<a
+href="#booking"
+style="
+background:#8a613d;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+"
+>
+
+Book Now
+
+</a>
 
 </nav>
 
@@ -53,8 +86,8 @@ Experience Manali Differently.
 </h1>
 
 <p>
-Peaceful mountain views, warm wooden interiors and flexible villa stays —
-designed for families, groups and slow mountain living.
+Peaceful mountain stays with scenic valley views,
+warm wooden interiors and private villa experiences away from Mall Road.
 </p>
 
 <a
@@ -72,18 +105,19 @@ Get a Quote on WhatsApp
 
 <section style="
 padding:70px 30px;
-text-align:center;
 background:white;
+text-align:center;
 ">
 
 <h2>Guest Reviews</h2>
 
 <p style="font-size:20px;">
-⭐ 5.0 Rating • 21 Reviews
+⭐ 5.0 Rating • 21 Google Reviews
 </p>
 
 <p>
-Guests love our peaceful setting, scenic valley views and warm hospitality.
+Guests love our peaceful location,
+beautiful views and warm hospitality.
 </p>
 
 </section>
@@ -94,7 +128,48 @@ background:#faf8f5;
 text-align:center;
 ">
 
+<h2>Choose Your Stay</h2>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+">
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Private Room</h3>
+<p>Comfortable stays for couples and families.</p>
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Entire Floor</h3>
+<p>Ground, First or Wooden Attic floor.</p>
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;">
+<h3>Entire Villa</h3>
+<p>Perfect for large groups and celebrations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section
+id="booking"
+style="
+padding:70px 30px;
+background:white;
+text-align:center;
+"
+>
+
 <h2>Booking Inquiry</h2>
+
+<p>
+Starting from ₹2,499 • Prices vary by season and occupancy
+</p>
 
 <form
 action="https://formsubmit.co/oakamberretreat@gmail.com"
@@ -104,6 +179,7 @@ max-width:700px;
 margin:auto;
 display:grid;
 gap:15px;
+margin-top:25px;
 "
 >
 
@@ -150,8 +226,8 @@ style="padding:14px;border:1px solid #ddd;border-radius:8px;"
 
 <textarea
 name="Message"
-placeholder="Tell us about your trip"
 rows="5"
+placeholder="Tell us about your trip"
 style="padding:14px;border:1px solid #ddd;border-radius:8px;"
 ></textarea>
 
