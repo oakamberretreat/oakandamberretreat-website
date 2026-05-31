@@ -1,183 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Rooms & Villas | Oak & Amber Retreat</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Floors | Oak & Amber Retreat Manali</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<header style="
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 40px;
-background:white;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 12px rgba(0,0,0,.06);
-">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">Oak & Amber</a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" style="color: var(--color-accent);">Rooms & Floors</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="explore-manali.html">Explore Manali</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#booking" class="book-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div style="font-size:24px;font-weight:700;">
-Oak & Amber Retreat
-</div>
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Stay Your Way</h1>
+            <p>From individual cozy rooms to private floors and the entire villa. We tailor your mountain escape exactly to your group size.</p>
+        </div>
+    </header>
 
-<nav style="
-display:flex;
-gap:18px;
-align-items:center;
-flex-wrap:wrap;
-">
+    <!-- PRICING NOTE -->
+    <section class="section-padding" style="padding-bottom: 20px;">
+        <div class="container text-center">
+            <h3 style="color: var(--color-accent);"><i class="fas fa-tag"></i> Stays starting from ₹2,499</h3>
+            <p>Prices vary by season, occupancy, and stay type. Please inquire for exact quotes.</p>
+        </div>
+    </section>
 
-<a href="index.html" style="text-decoration:none;color:#222;">Home</a>
-<a href="rooms.html" style="text-decoration:none;color:#222;">Rooms</a>
-<a href="gallery.html" style="text-decoration:none;color:#222;">Gallery</a>
-<a href="experiences.html" style="text-decoration:none;color:#222;">Experiences</a>
-<a href="explore-manali.html" style="text-decoration:none;color:#222;">Explore Manali</a>
-<a href="contact.html" style="text-decoration:none;color:#222;">Contact</a>
+    <!-- ROOM LISTINGS -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            
+            <!-- Individual Room -->
+            <div class="room-row">
+                <div class="room-image-placeholder">
+                    <!-- IMAGE UPLOAD INSTRUCTION: 
+                         Upload 'room-1.jpg' into your root folder, then replace the text below with:
+                         <img src="room-1.jpg" alt="Individual Room">
+                    -->
+                    <span>Upload room photo here</span>
+                </div>
+                <div class="room-content">
+                    <h2>Individual Room</h2>
+                    <p>Perfect for couples, solo travelers, or remote workers seeking a peaceful mountain retreat. These rooms feature plush bedding, en-suite bathrooms, and gorgeous valley views.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-user"></i> Max 3 Guests</span>
+                        <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                        <span><i class="fas fa-wifi"></i> Fast Wi-Fi</span>
+                    </div>
+                    <a href="index.html#booking" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
 
-<a
-href="index.html#booking"
-style="
-background:#8a613d;
-color:white;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:700;
-"
->
-Book Now
-</a>
+            <!-- Ground Floor & First Floor -->
+            <div class="room-row">
+                <div class="room-image-placeholder">
+                    <!-- <img src="modern-floor.jpg" alt="Modern Floor"> -->
+                    <span>Upload ground/first floor photo here</span>
+                </div>
+                <div class="room-content">
+                    <h2>Ground & First Floor (3 BHK)</h2>
+                    <p>Traveling with family? Book an entire modern floor. Each of these floors features 3 spacious bedrooms, sleek modern interiors, and common lounging spaces to gather and relax.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-users"></i> Up to 9 Guests</span>
+                        <span><i class="fas fa-door-open"></i> 3 Bedrooms</span>
+                        <span><i class="fas fa-couch"></i> Modern Interiors</span>
+                    </div>
+                    <a href="index.html#booking" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
 
-</nav>
+            <!-- Wooden Attic Floor -->
+            <div class="room-row">
+                <div class="room-image-placeholder">
+                    <!-- <img src="attic-floor.jpg" alt="Wooden Attic Floor"> -->
+                    <span>Upload attic photo here</span>
+                </div>
+                <div class="room-content">
+                    <h2>Second Floor (4 BHK Wooden Attic)</h2>
+                    <p>Our premium offering. The entire top floor features authentic warm wooden interiors and charming attic-style ceilings. It offers the best panoramic views of the Manali valley.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-users"></i> Up to 12 Guests</span>
+                        <span><i class="fas fa-door-open"></i> 4 Bedrooms</span>
+                        <span><i class="fas fa-tree"></i> Premium Wood Interiors</span>
+                    </div>
+                    <a href="index.html#booking" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
 
-</header>
+            <!-- Entire Villa -->
+            <div class="room-row">
+                <div class="room-image-placeholder" style="background-image: url('hero photo.JPG'); background-size: cover; background-position: center;">
+                    <!-- Uses Hero image since it represents the whole villa -->
+                </div>
+                <div class="room-content">
+                    <h2>The Entire Villa</h2>
+                    <p>Looking for a private estate for a large gathering? Rent the entire Oak & Amber Retreat. Enjoy absolute privacy across all three floors, perfect for retreats, reunions, and large family vacations.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-users"></i> 20+ Guests</span>
+                        <span><i class="fas fa-house"></i> 10 Bedrooms</span>
+                        <span><i class="fas fa-parking"></i> Private Parking</span>
+                        <span><i class="fas fa-paw"></i> Pet Friendly</span>
+                    </div>
+                    <a href="index.html#booking" class="btn btn-primary">Inquire Now</a>
+                </div>
+            </div>
 
-<section style="
-padding:80px 30px;
-text-align:center;
-background:#faf8f5;
-">
+        </div>
+    </section>
 
-<h1>Rooms & Villas</h1>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Oak & Amber Retreat</h4>
+                    <p>Escape the Crowds. Experience Manali Differently.</p>
+                    <p>Sajla, Manali, Himachal Pradesh</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="rooms.html">Rooms & Rates</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 78888 92636</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 78888 92636</li>
+                        <li><i class="fas fa-envelope"></i> oakamberretreat@gmail.com</li>
+                        <li><i class="fab fa-instagram"></i> @oakamberretreat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oak & Amber Retreat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-<p>
-Flexible stay options for couples, families and large groups.
-</p>
-
-</section>
-
-<section style="
-padding:50px 30px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-background:white;
-">
-
-<div style="background:#faf8f5;padding:30px;border-radius:16px;">
-<h2>Private Room</h2>
-<p>Maximum 3 guests</p>
-<p>Comfortable mountain stays with privacy and scenic surroundings.</p>
-</div>
-
-<div style="background:#faf8f5;padding:30px;border-radius:16px;">
-<h2>Entire Ground Floor</h2>
-<p>3 BHK • Max 9 Guests</p>
-<p>Modern interiors ideal for family stays.</p>
-</div>
-
-<div style="background:#faf8f5;padding:30px;border-radius:16px;">
-<h2>Entire First Floor</h2>
-<p>3 BHK • Max 9 Guests</p>
-<p>Spacious and peaceful with beautiful valley views.</p>
-</div>
-
-<div style="background:#faf8f5;padding:30px;border-radius:16px;">
-<h2>Wooden Attic Floor</h2>
-<p>4 BHK • Max 12 Guests</p>
-<p>Warm wooden interiors and cozy mountain charm.</p>
-</div>
-
-<div style="background:#faf8f5;padding:30px;border-radius:16px;">
-<h2>Entire Villa</h2>
-<p>Best for large groups and celebrations.</p>
-<p>Enjoy the complete Oak & Amber experience.</p>
-</div>
-
-</section>
-
-<section style="
-padding:70px 30px;
-background:#faf8f5;
-text-align:center;
-">
-
-<h2>Book Your Stay</h2>
-
-<p>
-Starting from ₹2,499 • Prices vary by season and occupancy
-</p>
-
-<a
-href="https://wa.me/917888892636"
-class="btn"
->
-
-Get a Quote on WhatsApp
-
-</a>
-
-</section>
-
-  
-<a
-href="https://wa.me/917888892636"
-style="
-position:fixed;
-right:22px;
-bottom:22px;
-background:#25D366;
-color:white;
-width:58px;
-height:58px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 8px 20px rgba(0,0,0,.18);
-z-index:999;
-"
-title="Chat on WhatsApp"
->
-
-✆
-
-</a>
-
-
-<footer style="
-text-align:center;
-background:#111;
-color:white;
-padding:30px;
-">
-
-© Oak & Amber Retreat • Sajla, Manali
-
-</footer>
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
-
 </html>
-```
