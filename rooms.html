@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,23 +17,45 @@
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
+padding:18px 40px;
 background:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 12px rgba(0,0,0,.06);
 ">
 
-<div style="font-size:24px;font-weight:bold;">
+<div style="font-size:24px;font-weight:700;">
 Oak & Amber Retreat
 </div>
 
-<nav>
+<nav style="
+display:flex;
+gap:18px;
+align-items:center;
+flex-wrap:wrap;
+">
 
-<a href="index.html" style="margin-left:20px;text-decoration:none;color:#222;">Home</a>
+<a href="index.html" style="text-decoration:none;color:#222;">Home</a>
+<a href="rooms.html" style="text-decoration:none;color:#222;">Rooms</a>
+<a href="gallery.html" style="text-decoration:none;color:#222;">Gallery</a>
+<a href="experiences.html" style="text-decoration:none;color:#222;">Experiences</a>
+<a href="explore-manali.html" style="text-decoration:none;color:#222;">Explore Manali</a>
+<a href="contact.html" style="text-decoration:none;color:#222;">Contact</a>
 
-<a href="rooms.html" style="margin-left:20px;text-decoration:none;color:#222;">Rooms & Villas</a>
-
-<a href="#" style="margin-left:20px;text-decoration:none;color:#222;">Gallery</a>
-
-<a href="#" style="margin-left:20px;text-decoration:none;color:#222;">Contact</a>
+<a
+href="index.html#booking"
+style="
+background:#8a613d;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+"
+>
+Book Now
+</a>
 
 </nav>
 
@@ -49,7 +70,7 @@ background:#faf8f5;
 <h1>Rooms & Villas</h1>
 
 <p>
-Flexible stays for couples, families and large groups.
+Flexible stay options for couples, families and large groups.
 </p>
 
 </section>
@@ -59,99 +80,51 @@ padding:50px 30px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
-">
-
-<div style="
 background:white;
-padding:25px;
-border-radius:12px;
 ">
 
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h2>Private Room</h2>
-
 <p>Maximum 3 guests</p>
-
-<p>
-Comfortable mountain stay for couples or small families.
-</p>
-
+<p>Comfortable mountain stays with privacy and scenic surroundings.</p>
 </div>
 
-<div style="
-background:white;
-padding:25px;
-border-radius:12px;
-">
-
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h2>Entire Ground Floor</h2>
-
 <p>3 BHK • Max 9 Guests</p>
-
-<p>
-Modern interiors with peaceful mountain surroundings.
-</p>
-
+<p>Modern interiors ideal for family stays.</p>
 </div>
 
-<div style="
-background:white;
-padding:25px;
-border-radius:12px;
-">
-
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h2>Entire First Floor</h2>
-
 <p>3 BHK • Max 9 Guests</p>
-
-<p>
-Ideal for family vacations and workations.
-</p>
-
+<p>Spacious and peaceful with beautiful valley views.</p>
 </div>
 
-<div style="
-background:white;
-padding:25px;
-border-radius:12px;
-">
-
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h2>Wooden Attic Floor</h2>
-
 <p>4 BHK • Max 12 Guests</p>
-
-<p>
-Warm wooden interiors and attic-style rooms.
-</p>
-
+<p>Warm wooden interiors and cozy mountain charm.</p>
 </div>
 
-<div style="
-background:white;
-padding:25px;
-border-radius:12px;
-">
-
+<div style="background:#faf8f5;padding:30px;border-radius:16px;">
 <h2>Entire Villa</h2>
-
-<p>Large Groups & Gatherings</p>
-
-<p>
-Best for reunions, celebrations and long stays.
-</p>
-
+<p>Best for large groups and celebrations.</p>
+<p>Enjoy the complete Oak & Amber experience.</p>
 </div>
 
 </section>
 
 <section style="
 padding:70px 30px;
+background:#faf8f5;
 text-align:center;
 ">
 
-<h2>Starting from ₹2,499</h2>
+<h2>Book Your Stay</h2>
 
 <p>
-Prices vary by season, occupancy and stay type.
+Starting from ₹2,499 • Prices vary by season and occupancy
 </p>
 
 <a
@@ -164,6 +137,37 @@ Get a Quote on WhatsApp
 </a>
 
 </section>
+
+<a
+href="https://wa.me/917888892636"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:16px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+z-index:999;
+"
+>
+
+💬
+
+</a>
+
+<footer style="
+text-align:center;
+background:#111;
+color:white;
+padding:30px;
+">
+
+© Oak & Amber Retreat • Sajla, Manali
+
+</footer>
 
 </body>
 
