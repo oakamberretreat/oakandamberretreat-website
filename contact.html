@@ -6,6 +6,45 @@
     <title>Contact Us | Oak & Amber Retreat Manali</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    @media (max-width: 768px) {
+        /* This hides the normal menu on mobile */
+        .nav-links {
+            display: none; 
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            background-color: #ffffff; 
+            text-align: center;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            padding: 0;
+            margin: 0;
+            z-index: 999;
+        }
+        /* THIS is the magic class the JavaScript activates */
+        .nav-links.active {
+            display: flex !important; 
+        }
+        .nav-links li {
+            width: 100%;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .nav-links li a {
+            display: block;
+            width: 100%;
+        }
+        /* Make sure the hamburger icon is visible and clickable */
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+            font-size: 24px;
+            color: #b38728; /* Premium gold color */
+        }
+    }
+</style>
 </head>
 <body>
 
