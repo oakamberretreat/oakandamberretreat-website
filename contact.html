@@ -118,6 +118,17 @@
     <a href="https://wa.me/917888892636" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
 
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        }
+    });
+</script>
 </body>
 </html>
