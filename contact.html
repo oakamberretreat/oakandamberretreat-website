@@ -65,27 +65,10 @@
 
                 <div class="booking-form-wrapper" style="margin: 0; width: 100%;">
                     <h3 style="margin-bottom: 20px;">Send an Inquiry</h3>
-                    <form action="https://formsubmit.co/hello@oakandamberretreat.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Contact Form Inquiry">
-                        <input type="hidden" name="_next" value="https://oakandamberretreat.com">
-                        <input type="hidden" name="_captcha" value="false">
-
-                        <div class="form-grid" style="grid-template-columns: 1fr;">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone / WhatsApp</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message / Requested Dates</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="a283ecaf-a8dc-4d93-8dfd-cd2ca8555329">
+    <input type="hidden" name="subject" value="New Booking Inquiry from Website">
+    <input type="hidden" name="redirect" value="https://oakandamberretreat.com">
                 </div>
 
             </div>
