@@ -89,24 +89,26 @@
                 
             </div>
             <div class="booking-form-wrapper">
-                <form action="https://api.web3forms.com/submit" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST">
     <!-- Web3Forms Hidden Setup -->
     <input type="hidden" name="access_key" value="a283ecaf-a8dc-4d93-8dfd-cd2ca8555329">
     <input type="hidden" name="subject" value="New Booking Inquiry from Website">
     <input type="hidden" name="redirect" value="https://oakandamberretreat.com">
     <input type="hidden" name="from_name" value="Oak & Amber Website">
 
-    <!-- Visible Form Fields -->
-    <div class="form-grid">
-        <input type="text" name="Name" placeholder="Full Name" required>
-        <input type="email" name="Email" placeholder="Email Address" required>
-        <input type="tel" name="Phone" placeholder="Phone Number" required>
-        <input type="text" name="Guests" placeholder="Number of Guests" required>
-        <input type="date" name="Check-In" required>
-        <input type="date" name="Check-Out" required>
+    <!-- Visible & Styled Form Fields -->
+    <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+        <input type="text" name="Name" placeholder="Full Name" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none;">
+        <input type="email" name="Email" placeholder="Email Address" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none;">
+        <input type="tel" name="Phone" placeholder="Phone Number" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none;">
+        <input type="text" name="Guests" placeholder="Number of Guests" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none;">
+        <input type="date" name="Check-In" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none; color: #555;">
+        <input type="date" name="Check-Out" required style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; outline: none; color: #555;">
     </div>
-    <textarea name="Message" placeholder="Any special requests or questions?" rows="4"></textarea>
-    <button type="submit" class="btn">Book Now</button>
+    
+    <textarea name="Message" placeholder="Any special requests or questions?" rows="4" style="width: 100%; padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-family: inherit; font-size: 15px; background: #fafafa; margin-bottom: 20px; resize: vertical; outline: none;"></textarea>
+    
+    <button type="submit" class="btn" style="width: 100%; padding: 16px; background-color: #b38728; color: #ffffff; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;">Book Your Escape</button>
 </form>
     </section>
 
