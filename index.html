@@ -89,32 +89,10 @@
                 
             </div>
             <div class="booking-form-wrapper">
-                <form action="https://formsubmit.co/hello@oakandamberretreat.com" method="POST">
-                    <input type="hidden" name="_subject" value="New Booking Inquiry - Oak & Amber Retreat">
-                    <input type="hidden" name="_next" value="https://oakandamberretreat.com">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="form-grid">
-                        <div class="form-group"><label>Full Name</label><input type="text" name="name" required></div>
-                        <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" name="phone" required></div>
-                        <div class="form-group"><label>Check-in Date</label><input type="date" name="checkin" required></div>
-                        <div class="form-group"><label>Check-out Date</label><input type="date" name="checkout" required></div>
-                        <div class="form-group"><label>Guests</label><input type="number" name="guests" min="1" required></div>
-                        <div class="form-group">
-                            <label>Stay Type</label>
-                            <select name="staytype" required>
-                                <option value="" disabled selected>Select an option</option>
-                                <option value="Individual Room">Individual Room</option>
-                                <option value="Ground Floor (3BHK)">Entire Ground Floor (3BHK)</option>
-                                <option value="First Floor (3BHK)">Entire First Floor (3BHK)</option>
-                                <option value="Second Floor Attic (4BHK)">Entire Wooden Attic (4BHK)</option>
-                                <option value="Entire Villa">Entire Villa (10 Bedrooms)</option>
-                            </select>
-                        </div>
-                        <div class="form-group full-width">
-                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
-                        </div>
-                    </div>
-                </form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="a283ecaf-a8dc-4d93-8dfd-cd2ca8555329">
+    <input type="hidden" name="subject" value="New Booking Inquiry from Website">
+    <input type="hidden" name="redirect" value="https://oakandamberretreat.com">
             </div>
         </div>
     </section>
